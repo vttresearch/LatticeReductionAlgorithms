@@ -2,7 +2,7 @@
 
 This repository contains a Python-based framework demonstrating how lattice reduction algorithms improve lattice basis quality.
 
-Detailed documentation available at: 
+Detailed documentation available at: https://vttresearch.github.io/LatticeReductionAlgorithms/
 
 Project repository is structured as follows:
 
