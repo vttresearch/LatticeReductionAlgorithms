@@ -1,0 +1,55 @@
+site_name: Lattice Reduction Algorithms
+theme: 
+  name: material
+  features:
+    - content.tooltips
+    - content.footnote.tooltips
+plugins:
+  - mkdocstrings:
+      handlers: 
+        python:
+          paths:  [., bkz]
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - def_list
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+nav:
+  - Home: index.md
+  - Acknowledgements: about.md
+  - Getting Started: get_started.md
+  - Docs:
+    - source_code_doc.md
+    - main.md
+    - plotter.md
+    - BKZ:
+      - basis_generator.md
+      - bkz_schnorr_euchner.md
+      - bkz_schnorr_euchner_progress_check.md
+      - L3FP: 
+        - l3fp_initializer.md
+        - reducer.md
+        - l3fp.md
+        - l3fp_deep_insertion.md
+        - delete_zero.md
+        - gsofp_se.md
+        - L3fp_params.md
+      - BasisQualityEvaluation:
+        - basis_quality_characteristics.md
+        - basis_quality_evaluation.md
+      - SVPsolvers:
+        - enum_schnorr_euchner.md
+        - enum_schnorr_euchner_og.md
+        - enum_schnorr_horner.md
