@@ -62,12 +62,9 @@ def compute_hermite_factor(shortest_vector_len, log_vol, dim):
 	and `n` is the dimension.
 
 	Args:
-	    shortest_vector_len (float):
-	        Length of the shortest vector in the basis.
-	 vol (float):
-	     Volume of the lattice.
-	 dim (int):
-	     Dimension of the lattice (n).
+		shortest_vector_len (float): Length of the shortest vector in the basis.
+		vol (float): Volume of the lattice.
+		dim (int): Dimension of the lattice (n).
 
 	Returns:
 	    (float): The Hermite factor.
